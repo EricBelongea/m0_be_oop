@@ -3,6 +3,23 @@
 # it should have a color attribute, that is silver by default
 # it should have a method called "say" that returns whatever string is passed in, with "*~*" at the beginning and end of the string
 
+class Unicorn
+    attr_reader :say, :name, :color
+
+    def initialize(name)
+        @name = name
+        @color = "silver"
+    end
+
+    def say(words)
+        "*~* #{words} *~*"
+    end
+end
+
+uni1 = Unicorn.new("Scotland")
+p uni1
+p uni1.say("I am the national animal of Scotland")
+
 
 
 #  Write a class called Vampire
