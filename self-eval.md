@@ -1,5 +1,12 @@
 # Self-Evaluation
 
 - This final CFU encompassed everything you've learned in Mod 0, and maybe even required some learning outside of what you've explicitly been taught. How did it feel as you faced these challenges?
+    - I thought that challenge went super well. I did the practice problems in the Replit as I read through the lesson portion of the assignment. This really helped me and allowed me to reference my previous work. This highlighted the simple sytatical errors of my code, logic, and how to use methodology. In the Dino example for which I am speaking I thought that using attr_reader was a cool way to print more that just attributes. Wondering if that's something we'll being doing more of/ it didn't seem required for this assignment. 
+    - When doing vampires I was stuck on how to call .drink to update the @thirsty to false. All that was printed in the terminal was the boolean false. Then referencing the Dino example I saw that I had to call p vampire2 on another line, and not the same line that I called the .drink method on. This is were reflecting on past work was super helpful.
+    - It was cool to see how all of our learning stacks and combines when doing the Dragons and Hobbits. Playing around with the code and thinking of how all the puzzle pieces fit together was really interesting to me. Being able to read and understand error messages really helped me fix my mistakes. For example, when there's an if statement code block in a defined method referencing an attribute one has to call the attribute with a @attribute opposed to jsut 'attribute'. 
 - How is your workflow going, in terms of taking breaks, staying focused, etc.?
+    - Work flow has been going well I think. I like having the blocked time and knowing when I'm going to play and when I'm going to work. When working on vmapires I was many hours into coding with breaks intersperesed, which really help, but I could tell that fatigue was catching up to me. Slept, exercised, and then came back to the work and it all made sense. Breaks help big time. 
 - What did you learn from this exercise that you want to remember as you begin Mod 1?
+    - One would be that breaks are super helpful and rejuvenate the mind, and sometimes longer breaks are necessary.
+    - Referencing prior code is super useful and important. That pseudo code is helpful for explaining methods and logic, so that when you go back to reference you know what the logic behind it was. 
+    - Google is your friend <3
