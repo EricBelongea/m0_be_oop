@@ -29,9 +29,9 @@ p uni1.say("I am the national animal of Scotland")
 #  it should have a drink method. When called, the thirsty attribute changes to false
 
 class Vampire
-    attr_reader :name, :thirsty, :pet, :drink
+    attr_reader :name, :thirsty, :pet, :drink, :new_thirsty
 
-    def initialize(name, thirsty, pet = "bat")
+    def initialize(name, pet = "bat")
         @name = name
         @thirsty = true
         @pet = pet
@@ -39,21 +39,23 @@ class Vampire
 
     def drink(new_thirsty)
         @thirsty = new_thirsty
-        @new_thirsty = false
-        @name = name
-        @pet = pet
+        # @new_thirsty = false
+        # @name = name
+        # @pet = pet
     end
 end
 
-vampire1 = Vampire.new("Dracula", true)
+vampire1 = Vampire.new("Dracula")
 p vampire1
 
-vampire2 = Vampire.new("Dracula", "blood?", "humans")
+vampire2 = Vampire.new("Dracula")
 p vampire2
-p vampire2.drink("water?")
+p "================="
+vampire2.drink(false)
+p vampire2
 
-
-# In the code above when vampire2.drink is called only false is printed
+# In the code above when vampire2.drink is called only false is printed. Looking back at 
+# the EscapeCar class I seem to have everything the same, I'll have to wokr on this.
 
 #  Write a Dragon class
 #  it should have a dynamic name attribute (string)
@@ -61,6 +63,7 @@ p vampire2.drink("water?")
 #  it should have a dynamic color attribute (string)
 #  it should have a is_hungry attribute that is true by default
 #  it should have a eat method. If the dragon eats 4 times, it is no longer hungry
+
 
 
 #  Write a Hobbit class
