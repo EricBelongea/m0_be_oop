@@ -19,7 +19,7 @@ end
 uni1 = Unicorn.new("Scotland")
 p uni1
 p uni1.say("I am the national animal of Scotland")
-
+p "================="
 
 
 #  Write a class called Vampire
@@ -29,8 +29,6 @@ p uni1.say("I am the national animal of Scotland")
 #  it should have a drink method. When called, the thirsty attribute changes to false
 
 class Vampire
-    attr_reader :name, :thirsty, :pet, :drink, :new_thirsty
-
     def initialize(name, pet = "bat")
         @name = name
         @thirsty = true
@@ -39,9 +37,6 @@ class Vampire
 
     def drink(new_thirsty)
         @thirsty = new_thirsty
-        # @new_thirsty = false
-        # @name = name
-        # @pet = pet
     end
 end
 
@@ -50,12 +45,13 @@ p vampire1
 
 vampire2 = Vampire.new("Dracula")
 p vampire2
-p "================="
+
 vampire2.drink(false)
 p vampire2
-
+p "================="
 # In the code above when vampire2.drink is called only false is printed. Looking back at 
-# the EscapeCar class I seem to have everything the same, I'll have to wokr on this.
+# the EscapeCar class I seem to have everything the same, I'll have to wokr on this... 
+# Solution: I had to call .drink on vampire seperate from a p statement, the p vampire2 after. 
 
 #  Write a Dragon class
 #  it should have a dynamic name attribute (string)
@@ -64,8 +60,36 @@ p vampire2
 #  it should have a is_hungry attribute that is true by default
 #  it should have a eat method. If the dragon eats 4 times, it is no longer hungry
 
+class Dragon
+    def initialize(name, rider, color)
+        @name = name
+        @rider = rider
+        @color = color
+        @is_hungry = true
+    end
 
+    def eat(hungry)
+        if hungry >= 4
+            hungry = false
+            @is_hungry = hungry
+        else
+            hungry = true
+            @is_hungry = hungry
+        end
+        
+    end
+end
 
+dragon1 = Dragon.new("Drogon", "Khaleesi", "red")
+p dragon1
+
+dragon1.eat(5)
+p dragon1
+
+dragon1.eat(3)
+p dragon1
+
+p "================="
 #  Write a Hobbit class
 #  it should have a dynamic name attribute (string)
 #  it should have a dynamic disposition attribute (string)
