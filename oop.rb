@@ -28,6 +28,32 @@ p uni1.say("I am the national animal of Scotland")
 #  it should have a thirsty attribute, that is true by default
 #  it should have a drink method. When called, the thirsty attribute changes to false
 
+class Vampire
+    attr_reader :name, :thirsty, :pet, :drink
+
+    def initialize(name, thirsty, pet = "bat")
+        @name = name
+        @thirsty = true
+        @pet = pet
+    end
+
+    def drink(new_thirsty)
+        @thirsty = new_thirsty
+        @new_thirsty = false
+        @name = name
+        @pet = pet
+    end
+end
+
+vampire1 = Vampire.new("Dracula", true)
+p vampire1
+
+vampire2 = Vampire.new("Dracula", "blood?", "humans")
+p vampire2
+p vampire2.drink("water?")
+
+
+# In the code above when vampire2.drink is called only false is printed
 
 #  Write a Dragon class
 #  it should have a dynamic name attribute (string)
