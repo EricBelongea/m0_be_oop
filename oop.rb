@@ -111,8 +111,17 @@ class Hobbit
             @has_ring = true
         end
     end
+    
+    def celebrate_birthday
+        new_age = @age += 1
+        if @age >= 33 and @age < 101
+            @is_adult = true
+        elsif @age >= 101
+            @is_old = true
+        end
+    end
 
-    def celebrate_birthday(years)
+    def celebrate_birthday_quick(years)
         @age =years
         if @age >= 33 and @age < 101
             @is_adult = true
@@ -124,10 +133,59 @@ end
 
 hobbit1 = Hobbit.new("Bilbo", "Crotchety")
 p hobbit1
-hobbit1.celebrate_birthday(133)
+hobbit1.celebrate_birthday_quick(133)
 p hobbit1
 
 hobbit2 = Hobbit.new("Frodo", "Naive")
 p hobbit2
-hobbit2.celebrate_birthday(33)
+hobbit2.celebrate_birthday_quick(33)
 p hobbit2
+
+hobbit3 = Hobbit.new("Sam", "Wise")
+hobbit3.celebrate_birthday
+p hobbit3
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+hobbit3.celebrate_birthday
+
+p hobbit3
+
