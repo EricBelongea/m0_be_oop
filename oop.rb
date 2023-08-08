@@ -70,11 +70,7 @@ class Dragon
 
     def eat(hungry)
         if hungry >= 4
-            hungry = false
-            @is_hungry = hungry
-        else
-            hungry = true
-            @is_hungry = hungry
+            @is_hungry = false
         end
         
     end
