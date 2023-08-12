@@ -35,8 +35,8 @@ class Vampire
         @pet = pet
     end
 
-    def drink(new_thirsty)
-        @thirsty = new_thirsty
+    def drink
+        @thirsty = false
     end
 end
 
@@ -46,7 +46,7 @@ p vampire1
 vampire2 = Vampire.new("Dracula")
 p vampire2
 
-vampire2.drink(false)
+vampire2.drink
 p vampire2
 p "================="
 # In the code above when vampire2.drink is called only false is printed. Looking back at 
